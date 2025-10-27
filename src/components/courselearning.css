@@ -1,0 +1,37 @@
+/* components/courselearning.css */
+
+/* Additional responsive styles */
+@media (max-width: 768px) {
+  .course-modules-sidebar {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    max-height: calc(100vh - 60px);
+  }
+  
+  .lesson-content-area {
+    margin-left: 0 !important;
+  }
+}
+
+/* Smooth scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

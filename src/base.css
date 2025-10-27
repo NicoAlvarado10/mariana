@@ -1,0 +1,254 @@
+
+@font-face {
+  font-family: 'Montserrat Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+:root {
+  /* Purples → ahora son azules intensos */
+  --purple-50: #eef0ff;       /* fondo muy suave */
+  --purple-100: #d6dbff;      /* hover claro / badges */
+  --purple-600: #1030B8;      /* azul intenso (tu color base) */
+  --purple-700: #1E0F64;      /* azul profundo / títulos oscuros */
+  --purple-800: #1449D5;      /* azul vibrante / botones y énfasis */
+
+  /* Teals → redefinidos como contraste cálido y profesional */
+  --teal-50: #fef9f0;         /* fondo suave, cálido */
+  --teal-500: #e6b877;        /* acento dorado / botones secundarios */
+  --teal-600: #c48f4f;        /* hover dorado / énfasis */
+
+  /* Grises y verdes → sin cambios */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat Variable', sans-serif;
+}
+
+/* ===========================
+   LAYOUT GENERAL
+   =========================== */
+.page-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, var(--purple-50), #ffffff, var(--teal-50));
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+ 
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+.header {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--purple-100);
+}
+
+.header .container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-circle {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(to bottom right, var(--purple-600), var(--purple-800));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.header-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--gray-900);
+}
+
+.header-subtitle {
+  color: var(--purple-600);
+  font-weight: 500;
+}
+
+.header-right {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .header-right {
+    display: flex;
+  }
+}
+
+.mentor-info {
+  text-align: right;
+}
+
+.mentor-label {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.mentor-name {
+  font-weight: 600;
+  color: var(--gray-900);
+}
+
+.mentor-avatar {
+  width: 3rem;
+  height: 3rem;
+  background: var(--purple-100);
+  border-radius: 50%;
+}
+
+/* ===========================
+   BUTTONS COMPARTIDOS
+   =========================== */
+.btn-primary {
+  width: 100%;
+  background: linear-gradient(to right, var(--purple-600), var(--teal-600));
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+
+
+.btn-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover .btn-icon {
+  transform: translateX(0.25rem);
+}
+
+.btn-whatsapp {
+  display: block;
+  width: 100%;
+  background: var(--green-500);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: var(--green-600);
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--purple-600);
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: color 0.3s ease;
+}
+
+.back-button:hover {
+  color: var(--purple-800);
+}
+
+.back-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+.footer {
+  background: var(--gray-900);
+  color: var(--gray-400);
+  padding: 2rem 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-text {
+  margin-bottom: 0.5rem;
+}
+
+.footer-subtext {
+  font-size: 0.875rem;
+}
+
+/* ===========================
+   UTILIDADES COMPARTIDAS
+   =========================== */
+.check-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--teal-500);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
