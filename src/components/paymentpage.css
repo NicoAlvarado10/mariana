@@ -1,0 +1,433 @@
+/* ===========================
+   PAYMENT CONTAINER
+   =========================== */
+.payment-container {
+  padding: 3rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+.payment-header-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.payment-main-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .payment-main-title {
+    font-size: 3rem;
+  }
+}
+
+.payment-main-description {
+  font-size: 1.125rem;
+  color: var(--gray-600);
+}
+
+.payment-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .payment-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+
+/* ===========================
+   PAYMENT FORM SECTION (LEFT)
+   =========================== */
+.payment-form-section {
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .payment-form-section {
+    order: 1;
+  }
+}
+
+.payment-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+@media (min-width: 640px) {
+  .payment-card {
+    padding: 2.5rem;
+  }
+}
+
+.payment-security-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--green-50);
+  color: var(--green-600);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.security-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* ===========================
+   FORM SECTIONS
+   =========================== */
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--gray-400);
+  pointer-events: none;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.input-group .form-input {
+  padding-left: 3rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--purple-600);
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+.form-input::placeholder {
+  color: var(--gray-400);
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--purple-600);
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.1);
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ===========================
+   PAYMENT BUTTON
+   =========================== */
+.btn-pay {
+  width: 100%;
+  background: linear-gradient(to right, var(--purple-600), var(--teal-600));
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+}
+
+.btn-pay:hover {
+  background: linear-gradient(to right, var(--purple-700), var(--teal-600));
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.payment-terms {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 1rem;
+}
+
+/* ===========================
+   SUMMARY SECTION (RIGHT)
+   =========================== */
+.payment-summary-section {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .payment-summary-section {
+    order: 2;
+    position: sticky;
+    top: 1rem;
+  }
+}
+
+.summary-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.summary-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gray-900);
+  margin-bottom: 1.5rem;
+}
+
+/* ===========================
+   SUMMARY COURSE
+   =========================== */
+.summary-course {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+}
+
+.summary-course-image {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+
+.summary-course-info {
+  flex: 1;
+}
+
+.summary-course-subtitle {
+  font-size: 0.75rem;
+  color: var(--purple-600);
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.summary-course-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  line-height: 1.4;
+}
+
+/* ===========================
+   SUMMARY DETAILS
+   =========================== */
+.summary-details {
+  margin-bottom: 1.5rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  color: var(--gray-700);
+}
+
+.summary-row span:first-child {
+  font-size: 0.875rem;
+}
+
+.summary-row span:last-child {
+  font-weight: 600;
+}
+
+.text-green {
+  color: var(--green-600);
+}
+
+.summary-divider {
+  height: 1px;
+  background: var(--gray-200);
+  margin: 1rem 0;
+}
+
+.summary-total {
+  font-size: 1.125rem;
+  color: var(--gray-900);
+}
+
+.summary-total span {
+  font-weight: bold;
+}
+
+.summary-total span:last-child {
+  font-size: 1.5rem;
+  color: var(--purple-600);
+}
+
+/* ===========================
+   SUMMARY BENEFITS
+   =========================== */
+.summary-benefits {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+  margin-bottom: 1.5rem;
+}
+
+.summary-benefits-title {
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.summary-benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.summary-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--gray-700);
+}
+
+.benefit-check {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--teal-500);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+/* ===========================
+   SUMMARY GUARANTEE
+   =========================== */
+.summary-guarantee {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--purple-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.guarantee-badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--purple-600);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.guarantee-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.guarantee-title {
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.guarantee-text {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  line-height: 1.4;
+}
+
+/* ===========================
+   RESPONSIVE ADJUSTMENTS
+   =========================== */
+@media (max-width: 1023px) {
+  .payment-container {
+    padding: 2rem 0;
+  }
+  
+  .payment-header-section {
+    margin-bottom: 2rem;
+  }
+  
+  .payment-card,
+  .summary-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 639px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
