@@ -14,7 +14,7 @@ function HomePage({ onCourseClick, courses }) {
               <div className="logo-circle">CR</div>
               <div>
                 <a href="#" className="header-title">Mariana Abdala  </a>
-                <p className="header-subtitle">Specialized English Training</p>
+                <p className="header-subtitle">Mentora Senior Certificada</p>
               </div>
             </div>
 
@@ -39,7 +39,7 @@ function HomePage({ onCourseClick, courses }) {
           <div className="hero-text">
             <h1 className="hero-title">Fluidez y Confianza para Expresarte y Crecer</h1>
             <p className="hero-subtitle">
-              en Investigación Clínica - Celebrando 20 años de excelencia en formación especializada de inglés
+               Investigación Clínica - Celebrando 20 años de excelencia en formación especializada de inglés
             </p>
 
             <div className="hero-cta">
@@ -51,21 +51,7 @@ function HomePage({ onCourseClick, courses }) {
               </span>
             </div>
 
-            {/* Hero Stats */}
-            <div className="hero-stats">
-              <div className="stat-card">
-                <p className="stat-label">Grupos Reducidos</p>
-                <p className="stat-value">5 personas</p>
-              </div>
-              <div className="stat-card">
-                <p className="stat-label">Modalidad</p>
-                <p className="stat-value">Virtual Training</p>
-              </div>
-              <div className="stat-card">
-                <p className="stat-label">Certificación</p>
-                <p className="stat-value">Internacional</p>
-              </div>
-            </div>
+            
           </div>
 
           <div className="hero-image">
@@ -85,13 +71,13 @@ function HomePage({ onCourseClick, courses }) {
           </div>
 
           <div className="about-text">
-            <h3 className="section-title">20 años formando profesionales</h3>
+            <h3 className="section-title">Formar con proposito</h3>
             <p className="about-intro">
-              <strong>Mariana Abdala </strong> es líder en formación especializada de inglés para profesionales 
+              <strong>Soy Mariana Abdala </strong> líder en formación especializada de inglés para profesionales 
               de la investigación clínica y salud con más de 20 años de experiencia.
             </p>
             <p>
-              Nuestro enfoque combina excelencia académica con metodologías innovadoras para desarrollar 
+              Mi enfoque combina excelencia académica con metodologías innovadoras para desarrollar 
               competencias lingüísticas reales que potencien tu carrera profesional en el ámbito internacional.
             </p>
 
@@ -106,7 +92,7 @@ function HomePage({ onCourseClick, courses }) {
               </div>
               <div className="stat-item">
                 <span className="stat-number">15+</span>
-                <span className="stat-label">Programas especializados</span>
+                <span className="stat-label">Cursos especializados</span>
               </div>
             </div>
           </div>

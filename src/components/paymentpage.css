@@ -2,7 +2,7 @@
    PAYMENT CONTAINER
    =========================== */
 .payment-container {
-  padding: 3rem 0;
+  padding: 6rem 0;
   min-height: calc(100vh - 200px);
 }
 
